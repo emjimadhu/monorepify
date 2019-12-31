@@ -10,5 +10,12 @@
   "license": "MIT"
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "scripts": {
+    "dev:client:start": "cd apps/client && yarn serve",
+    "dev:client:build": "cd apps/client && yarn build",
+    "dev:client:lint": "cd apps/client && yarn lint",
+    "test:client:unit": "cd apps/client && yarn test:unit",
+    "test:client:e2e": "cd apps/client && yarn test:e2e"
+  }
 }
