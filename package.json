@@ -21,5 +21,8 @@
     "dev:server:start": "cd apps/server && yarn start:dev",
     "dev:server:lint": "cd apps/server && yarn lint",
     "prod:server:start": "cd apps/server && yarn start:prod"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2"
   }
 }
