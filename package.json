@@ -12,6 +12,7 @@
     "apps/*"
   ],
   "scripts": {
+    "dev:start": "concurrently --names \"CLIENT,SERVER\" -c \"yellow.bold,yellow.bold\" \"yarn dev:client:start\" \"yarn dev:server:start\" ",
     "dev:client:start": "cd apps/client && yarn serve",
     "dev:client:build": "cd apps/client && yarn build",
     "dev:client:lint": "cd apps/client && yarn lint",
