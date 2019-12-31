@@ -16,6 +16,10 @@
     "dev:client:build": "cd apps/client && yarn build",
     "dev:client:lint": "cd apps/client && yarn lint",
     "test:client:unit": "cd apps/client && yarn test:unit",
-    "test:client:e2e": "cd apps/client && yarn test:e2e"
+    "test:client:e2e": "cd apps/client && yarn test:e2e",
+    "dev:server:build": "cd apps/server && yarn build",
+    "dev:server:start": "cd apps/server && yarn start:dev",
+    "dev:server:lint": "cd apps/server && yarn lint",
+    "prod:server:start": "cd apps/server && yarn start:prod"
   }
 }
