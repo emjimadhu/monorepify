@@ -24,6 +24,7 @@
     "prod:server:start": "cd apps/server && yarn start:prod"
   },
   "devDependencies": {
+    "@vue/cli-plugin-typescript": "^4.1.2",
     "concurrently": "^5.0.2"
   }
 }
