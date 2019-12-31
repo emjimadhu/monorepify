@@ -8,4 +8,7 @@
     "email": "emjimadhu@gmail.com"
   },
   "license": "MIT"
+  "workspaces": [
+    "apps/*"
+  ]
 }
