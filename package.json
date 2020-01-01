@@ -21,7 +21,8 @@
     "dev:server:build": "cd apps/server && yarn build",
     "dev:server:start": "cd apps/server && yarn start:dev",
     "dev:server:lint": "cd apps/server && yarn lint",
-    "prod:server:start": "cd apps/server && yarn start:prod"
+    "prod:server:start": "cd apps/server && yarn start:prod",
+    "utils:remove-node-modules": "rimraf node_modules apps/client/node_modules apps/server/node_modules"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
