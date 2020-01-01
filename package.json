@@ -24,7 +24,20 @@
     "prod:server:start": "cd apps/server && yarn start:prod"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.2",
     "@vue/cli-plugin-typescript": "^4.1.2",
-    "concurrently": "^5.0.2"
+    "concurrently": "^5.0.2",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.2.0",
+    "ts-node": "^8.5.4",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
   }
 }
