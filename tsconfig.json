@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "sourceMap": true,
+    "baseUrl": "./"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
