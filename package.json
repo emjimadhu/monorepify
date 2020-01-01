@@ -49,5 +49,10 @@
   "dependencies": {
     "@monorepify/shared": "1.0.0",
     "reflect-metadata": "^0.1.13"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0",
+    "yarn": ">=1.21.0"
   }
 }
