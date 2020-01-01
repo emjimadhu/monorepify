@@ -1,27 +1,6 @@
 {
   "defaultSeverity": "warning",
   "extends": [
-    "tslint:recommended"
-  ],
-  "linterOptions": {
-    "exclude": [
-      "node_modules/**"
-    ]
-  },
-  "rules": {
-    "indent": [
-      true,
-      "spaces",
-      2
-    ],
-    "interface-name": true,
-    "no-consecutive-blank-lines": true,
-    "object-literal-sort-keys": false,
-    "ordered-imports": false,
-    "trailing-comma": false,
-    "quotemark": [
-      true,
-      "single"
-    ]
-  }
+    "../../tslint.json"
+  ]
 }
