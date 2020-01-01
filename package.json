@@ -9,10 +9,12 @@
   },
   "license": "MIT"
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "libs/*"
   ],
   "scripts": {
-    "dev:start": "concurrently --names \"CLIENT,SERVER\" -c \"yellow.bold,yellow.bold\" \"yarn dev:client:start\" \"yarn dev:server:start\" ",
+    "dev:all:start": "concurrently --names \"SHARED,CLIENT,SERVER\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:client:start\" \"yarn dev:server:start\"",
+    "dev:all:build": "yarn dev:shared:build && yarn dev:client:build && yarn dev:server:build",
     "dev:client:start": "cd apps/client && yarn serve",
     "dev:client:build": "cd apps/client && yarn build",
     "dev:client:lint": "cd apps/client && yarn lint",
@@ -22,7 +24,13 @@
     "dev:server:start": "cd apps/server && yarn start:dev",
     "dev:server:lint": "cd apps/server && yarn lint",
     "prod:server:start": "cd apps/server && yarn start:prod",
-    "utils:remove-node-modules": "rimraf node_modules apps/client/node_modules apps/server/node_modules"
+    "dev:shared:start": "cd libs/shared && yarn build:watch",
+    "dev:shared:build": "cd libs/shared && rimraf dist && yarn build",
+    "dev-shared:client:start": "concurrently --names \"SHARED,CLIENT\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:client:start\"",
+    "dev-shared:server:start": "concurrently --names \"SHARED,SERVER\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:server:start\"",
+    "dev-shared:client:build": "yarn dev:shared:build && arn dev:client:build",
+    "dev-shared:server:build": "yarn dev:shared:build && arn dev:server:build",
+    "utils:remove-node-modules": "rimraf node_modules apps/client/node_modules apps/server/node_modules libs/shared/node_modules"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
@@ -39,6 +47,7 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
+    "@monorepify/shared": "1.0.0",
     "reflect-metadata": "^0.1.13"
   }
 }
