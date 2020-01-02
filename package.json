@@ -28,9 +28,9 @@
     "prod:nest:start": "cd apps/nest && yarn start:prod",
     "dev:shared:start": "cd libs/shared && yarn build:watch",
     "dev:shared:build": "cd libs/shared && rimraf dist && yarn build",
-    "dev-shared:client:start": "concurrently --names \"SHARED,CLIENT\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:vue:start\"",
+    "dev-shared:vue:start": "concurrently --names \"SHARED,VUE\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:vue:start\"",
     "dev-shared:server:start": "concurrently --names \"SHARED,SERVER\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:nest:start\"",
-    "dev-shared:client:build": "yarn dev:shared:build && arn dev:vue:build",
+    "dev-shared:vue:build": "yarn dev:shared:build && arn dev:vue:build",
     "dev-shared:server:build": "yarn dev:shared:build && arn dev:nest:build",
     "utils:remove-node-modules": "rimraf node_modules apps/vue/node_modules apps/nest/node_modules libs/shared/node_modules"
   },
