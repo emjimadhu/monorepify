@@ -1,5 +1,5 @@
 {
-  "name": "monorepify-client",
+  "name": "vue",
   "version": "1.0.0",
   "description": "A boilerplate for Full stack VueJS and nestJS and other typescript frameworks too. But i believe you can add JS frameworks too (with little modification)",
   "private": true,
