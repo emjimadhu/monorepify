@@ -2,11 +2,9 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![GitHub last commit][last-commit-shield]][last-commit-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-<br />
 <p align="center">
   <a href="#">
     <img src="readme-images/logo.png" alt="monorepify-logo" width="80" height="80">
@@ -96,7 +94,11 @@ npm i -g @nestjs/cli
 
 1. Clone the repo
 ```sh
-git clone #
+# SSH
+git clone git@github.com:emjimadhu/monorepify.git
+
+# HTTPS
+git clone https://github.com/emjimadhu/monorepify.git
 ```
 2. Install NPM packages
 ```sh
@@ -152,6 +154,7 @@ yarn install
         - `ng new <app_name>`
         - Remove `node_modules` and `.gitigonre` in `<app_name>`
         - `tsconfig.json`: Put `../../tsconfig` in `extends` field of `tsconfig` and remove common tsconfig options which can be shared across projects.
+        - `tslint.json`: Put `../../tslint` in `extends` field of `tslint` and remove common tslint options which can be shared across projects.
         - Run `cd <root_directory> && yarn utils:remove-node-modules && yarn install`
      - I believe you can add other typescript frameworks with this same steps! (You can even add native JS frameworks with little of tweaking)
 
@@ -161,20 +164,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Em Ji Madhu - [Linkedin](https://www.linkedin.com/in/em-ji-madhu-8b007456/)
+Em Ji Madhu - [![LinkedIn][linkedin-shield]][linkedin-url]
 
 Project Link: [Monorepify](https://github.com/emjimadhu/monorepify)
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/emjimadhu/monorepify.svg?style=flat&label=Contributors
 [contributors-url]: https://github.com/emjimadhu/monorepify/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/emjimadhu/monorepify.svg?style=flat&label=Forks
 [forks-url]: https://github.com/emjimadhu/monorepify/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/emjimadhu/monorepify.svg?style=flat&label=Stars
 [stars-url]: https://github.com/emjimadhu/monorepify/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/emjimadhu/monorepify.svg?style=flat&label=Issues
 [issues-url]: https://github.com/emjimadhu/monorepify/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/emjimadhu/monorepify/blob/master/LICENSE.txt
+[last-commit-shield]: https://img.shields.io/github/last-commit/emjimadhu/monorepify?label=Last%20Commit&style=flat
+[last-commit-url]: https://github.com/emjimadhu/monorepify/blob/master/LICENSE
+[license-shield]: https://img.shields.io/github/license/emjimadhu/monorepify.svg?style=flat&label=License
+[license-url]: https://github.com/emjimadhu/monorepify/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=1
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/em-ji-madhu-8b007456/
 [product-screenshot]: readme-images/screenshot.png
