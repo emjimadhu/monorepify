@@ -15,13 +15,18 @@
     ]
   },
   "scripts": {
-    "dev:all:start": "concurrently --names \"SHARED,VUE,NEST\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:vue:start\" \"yarn dev:nest:start\"",
-    "dev:all:build": "yarn dev:shared:build && yarn dev:vue:build && yarn dev:nest:build",
+    "dev:all:start": "concurrently --names \"SHARED,VUE,ANGULAR,NEST\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:vue:start\" \"yarn dev:angular:start\" \"yarn dev:nest:start\"",
+    "dev:all:build": "yarn dev:shared:build && yarn dev:vue:build && yarn dev:angular:build && yarn dev:nest:build",
     "dev:vue:start": "cd apps/vue && yarn serve",
     "dev:vue:build": "cd apps/vue && yarn build",
     "dev:vue:lint": "cd apps/vue && yarn lint",
     "test:vue:unit": "cd apps/vue && yarn test:unit",
     "test:vue:e2e": "cd apps/vue && yarn test:e2e",
+    "dev:angular:start": "cd apps/angular && yarn start",
+    "dev:angular:build": "cd apps/angular && yarn build",
+    "dev:angular:lint": "cd apps/angular && yarn lint",
+    "test:angular:unit": "cd apps/angular && yarn test",
+    "test:angular:e2e": "cd apps/angular && yarn e2e",
     "dev:nest:build": "cd apps/nest && yarn build",
     "dev:nest:start": "cd apps/nest && yarn start:dev",
     "dev:nest:lint": "cd apps/nest && yarn lint",
@@ -32,7 +37,7 @@
     "dev-shared:server:start": "concurrently --names \"SHARED,SERVER\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:nest:start\"",
     "dev-shared:vue:build": "yarn dev:shared:build && arn dev:vue:build",
     "dev-shared:server:build": "yarn dev:shared:build && arn dev:nest:build",
-    "utils:remove-node-modules": "rimraf node_modules apps/vue/node_modules apps/nest/node_modules libs/shared/node_modules"
+    "utils:remove-node-modules": "rimraf node_modules apps/vue/node_modules apps/angular/node_modules apps/nest/node_modules libs/shared/node_modules"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
@@ -50,7 +55,8 @@
   },
   "dependencies": {
     "@monorepify/shared": "1.0.0",
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4"
   },
   "engines": {
     "node": ">=12.0.0",

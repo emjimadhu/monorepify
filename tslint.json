@@ -5,6 +5,7 @@
   "linterOptions": {
     "exclude": [
       "apps/vue/node_modules/**",
+      "apps/angular/node_modules/**",
       "apps/nest/node_modules/**"
     ]
   },

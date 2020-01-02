@@ -37,6 +37,7 @@
 * [How to](#how-to)
   * [Code Scaffolding](#code-scaffolding)
       * [VueJS](#vuejs)
+      * [Angular](#angular)
       * [NestJS](#nestjs)
       * [Shared](#shared-typescript)
   * [Add other frameworks](#add-other-frameworks)
@@ -116,13 +117,18 @@ yarn install
 
 ## Scripts
 
-* `yarn dev:all:start` - Starts Development server for shared, vue and nest,
-* `yarn dev:all:build` - Builds shared, vue and nest,
+* `yarn dev:all:start` - Starts Development server for shared, vue, angular and nest,
+* `yarn dev:all:build` - Builds shared, vue, angular and nest,
 * `yarn dev:vue:start` - Starts vue development nest,
 * `yarn dev:vue:build` - Builds vue,
 * `yarn dev:vue:lint` - Lints vue,
 * `yarn test:vue:unit` - Unit testing for vue,
 * `yarn test:vue:e2e` - End to End testing for vue,
+* `yarn dev:angular:start` - Starts angular development nest,
+* `yarn dev:angular:build` - Builds angular,
+* `yarn dev:angular:lint` - Lints angular,
+* `yarn test:angular:unit` - Unit testing for angular,
+* `yarn test:angular:e2e` - End to End testing for angular,
 * `yarn dev:nest:start` - Starts nest development server,
 * `yarn dev:nest:build` - Builds nest,
 * `yarn dev:nest:lint` - Lints nest,
@@ -138,8 +144,9 @@ yarn install
 ## Directory Structure
 
 - `root`: Project root holds all the fies of the project
-    - `apps`: Holds client(VueJS) and server(NestJS) projects (You can add any client or server frameworks in here in addition or replace with existing ones. See section `Add other frameworks` in `How To`)
+    - `apps`: Holds client(VueJS), client(AngularJS) and server(NestJS) projects (You can add any client or server frameworks in here in addition or replace with existing ones. See section `Add other frameworks` in `How To`)
         - `vue`: A Vue project created using vue-cli
+        - `angular`: A Angular project created using vue-cli
         - `nest`: A Nest project created using nest-cli
     - `libs`: Holds all the common codes you can share between projects
         - `shared`: A shared module for common code sharing across projects in this work space.
@@ -151,6 +158,9 @@ yarn install
     - #### VueJS
         - `cd apps/vue`
         - `# Run any vue-cli commands in here`
+     - #### Angular
+         - `cd apps/angular`
+         - `# Run any angular-cli commands in here ex: ng g component <component-name>`
      - #### NestJS
        - `cd apps/nest`
        - `# Run any nest-cli commands in here ex: nest g m <module-name>`

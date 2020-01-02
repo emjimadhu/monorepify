@@ -2,6 +2,13 @@
 node_modules
 apps/vue/node_modules
 apps/vue/dist
+apps/angular/node_modules
+apps/angular/dist
+apps/angular/tmp
+apps/angular/out-tsc
+apps/angular/bazel-out
+apps/angular/chrome-profiler-events*.json
+apps/angular/speed-measure-plugin*.json
 apps/nest/node_modules
 apps/nest/dist
 libs/shared/node_modules
