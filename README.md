@@ -29,9 +29,18 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
+  * [Required Versions](#required-versions)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Scripts](#scripts)
+* [Directory Structure](#directory-structure)
+* [How to](#how-to)
+  * [Code Scaffolding](#code-scaffolding)
+      * [VueJS](#vuejs)
+      * [NestJS](#nestjs)
+      * [Shared](#shared-typescript)
+  * [Add other frameworks](#add-other-frameworks)
+      * [Angular (Example)](#angular-example)
 * [License](#license)
 * [Contact](#contact)
 
@@ -139,10 +148,10 @@ yarn install
 ## How to
 
 - ### Code Scaffolding
-    - #### Client (VueJS)
+    - #### VueJS
         - `cd apps/vue`
         - `# Run any vue-cli commands in here`
-     - #### Server (NestJS)
+     - #### NestJS
        - `cd apps/nest`
        - `# Run any nest-cli commands in here ex: nest g m <module-name>`
      - #### Shared (Typescript)
@@ -152,10 +161,11 @@ yarn install
     - ### Angular (Example)
         - `cd apps`
         - `ng new <app_name>`
-        - Remove `node_modules` and `.gitigonre` in `<app_name>`
+        - Remove `node_modules` and `package-lock.json` in `<app_name>`
         - `tsconfig.json`: Put `../../tsconfig` in `extends` field of `tsconfig` and remove common tsconfig options which can be shared across projects.
         - `tslint.json`: Put `../../tslint` in `extends` field of `tslint` and remove common tslint options which can be shared across projects.
         - Run `cd <root_directory> && yarn utils:remove-node-modules && yarn install`
+        - Look at branch **enhancement/new-angular-app** for example setup
      - I believe you can add other typescript frameworks with this same steps! (You can even add native JS frameworks with little of tweaking)
 
 ## License
