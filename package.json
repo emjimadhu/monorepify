@@ -8,22 +8,24 @@
     "email": "emjimadhu@gmail.com"
   },
   "license": "MIT",
-  "workspaces": [
-    "apps/*",
-    "libs/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ]
+  },
   "scripts": {
     "dev:all:start": "concurrently --names \"SHARED,VUE,NEST\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:vue:start\" \"yarn dev:nest:start\"",
     "dev:all:build": "yarn dev:shared:build && yarn dev:vue:build && yarn dev:nest:build",
     "dev:vue:start": "cd apps/vue && yarn serve",
     "dev:vue:build": "cd apps/vue && yarn build",
     "dev:vue:lint": "cd apps/vue && yarn lint",
-    "test:client:unit": "cd apps/vue && yarn test:unit",
-    "test:client:e2e": "cd apps/vue && yarn test:e2e",
+    "test:vue:unit": "cd apps/vue && yarn test:unit",
+    "test:vue:e2e": "cd apps/vue && yarn test:e2e",
     "dev:nest:build": "cd apps/nest && yarn build",
     "dev:nest:start": "cd apps/nest && yarn start:dev",
     "dev:nest:lint": "cd apps/nest && yarn lint",
-    "prod:server:start": "cd apps/nest && yarn start:prod",
+    "prod:nest:start": "cd apps/nest && yarn start:prod",
     "dev:shared:start": "cd libs/shared && yarn build:watch",
     "dev:shared:build": "cd libs/shared && rimraf dist && yarn build",
     "dev-shared:client:start": "concurrently --names \"SHARED,CLIENT\" -c \"yellow.bold,yellow.bold\" \"yarn dev:shared:start\" \"yarn dev:vue:start\"",
