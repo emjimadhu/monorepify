@@ -2,8 +2,8 @@
 node_modules
 apps/vue/node_modules
 apps/vue/dist
-apps/server/node_modules
-apps/server/dist
+apps/nest/node_modules
+apps/nest/dist
 libs/shared/node_modules
 libs/shared/dist
 
