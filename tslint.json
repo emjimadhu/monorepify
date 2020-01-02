@@ -4,8 +4,8 @@
   ],
   "linterOptions": {
     "exclude": [
-      "apps/client/node_modules/**",
-      "apps/client/node_modules/**"
+      "apps/vue/node_modules/**",
+      "apps/nest/node_modules/**"
     ]
   },
   "rules": {
