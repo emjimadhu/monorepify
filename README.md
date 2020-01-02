@@ -107,22 +107,22 @@ yarn install
 
 ## Scripts
 
-* `yarn run dev:all:start` - Starts Development server for shared, client and server,
-* `yarn run dev:all:build` - Builds shared, client and server,
-* `yarn run dev:client:start` - Starts client development server,
-* `yarn run dev:client:build` - Builds client,
-* `yarn run dev:client:lint` - Lints client,
-* `yarn run test:client:unit` - Unit testing for client,
-* `yarn run test:client:e2e` - End to End testing for client,
+* `yarn run dev:all:start` - Starts Development server for shared, vue and server,
+* `yarn run dev:all:build` - Builds shared, vue and server,
+* `yarn run dev:vue:start` - Starts vue development server,
+* `yarn run dev:vue:build` - Builds vue,
+* `yarn run dev:vue:lint` - Lints vue,
+* `yarn run test:vue:unit` - Unit testing for vue,
+* `yarn run test:vue:e2e` - End to End testing for vue,
 * `yarn run dev:server:start` - Starts server development server,
 * `yarn run dev:server:build` - Builds server,
 * `yarn run dev:server:lint` - Lints server,
 * `yarn run prod:server:start` - Starts server in production mode,
 * `yarn run dev:shared:start` - Starts shared development server,
 * `yarn run dev:shared:build` - Builds shared,
-* `yarn run dev-shared:client:start` - Starts shared and client in development mode,
+* `yarn run dev-shared:vue:start` - Starts shared and vue in development mode,
 * `yarn run dev-shared:server:start` - Starts shared and server in development mode,
-* `yarn run dev-shared:client:build` - Builds shared and client,
+* `yarn run dev-shared:vue:build` - Builds shared and vue,
 * `yarn run dev-shared:server:build` - Builds shared and server,
 * `yarn run utils:remove-node-modules` - Removes all node_modules folders
 
@@ -130,7 +130,7 @@ yarn install
 
 - `root`: Project root holds all the fies of the project
     - `apps`: Holds client(VueJS) and server(NestJS) projects (You can add any client or server frameworks in here in addition or replace with existing ones. See section `Add other frameworks` in `How To`)
-        - `client`: A Vue project created using vue-cli
+        - `vue`: A Vue project created using vue-cli
         - `server`: A Nest project created using nest-cli
     - `libs`: Holds all the common codes you can share between projects
         - `shared`: A shared module for common code sharing across projects in this work space.
@@ -140,7 +140,7 @@ yarn install
 
 - ### Code Scaffolding
     - #### Client (VueJS)
-        - `cd apps/client`
+        - `cd apps/vue`
         - `# Run any vue-cli commands in here`
      - #### Server (NestJS)
        - `cd apps/server`

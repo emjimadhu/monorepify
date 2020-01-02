@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
-apps/client/node_modules
-apps/client/dist
+apps/vue/node_modules
+apps/vue/dist
 apps/server/node_modules
 apps/server/dist
 libs/shared/node_modules
@@ -11,8 +11,8 @@ libs/shared/dist
 /tests/e2e/screenshots/
 
 # local env files
-apps/client/.env.local
-apps/client/.env.*.local
+apps/vue/.env.local
+apps/vue/.env.*.local
 
 # Log files
 npm-debug.log*
