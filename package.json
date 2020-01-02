@@ -7,7 +7,7 @@
     "name": "Em Ji Madhu",
     "email": "emjimadhu@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
   "workspaces": [
     "apps/*",
     "libs/*"
