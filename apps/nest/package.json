@@ -31,7 +31,7 @@
     "@types/supertest": "2.0.10",
     "nodemon": "1.19.4",
     "prettier": "1.19.1",
-    "supertest": "3.4.2",
+    "supertest": "4.0.2",
     "wait-on": "3.3.0"
   },
   "engines": {
