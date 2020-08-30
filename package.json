@@ -41,7 +41,7 @@
     "concurrently": "5.0.2",
     "jest": "24.9.0",
     "lint-staged": "9.5.0",
-    "rimraf": "3.0.0",
+    "rimraf": "3.0.2",
     "ts-jest": "24.2.0",
     "ts-node": "8.5.4",
     "tsconfig-paths": "3.9.0",
