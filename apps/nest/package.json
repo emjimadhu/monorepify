@@ -23,7 +23,7 @@
     "@nestjs/common": "6.11.11",
     "@nestjs/core": "6.11.11",
     "@nestjs/platform-express": "6.11.11",
-    "rxjs": "6.5.4"
+    "rxjs": "6.6.7"
   },
   "devDependencies": {
     "@nestjs/testing": "6.11.11",
