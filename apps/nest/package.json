@@ -30,7 +30,7 @@
     "@types/express": "4.17.7",
     "@types/supertest": "2.0.10",
     "nodemon": "1.19.4",
-    "prettier": "1.19.1",
+    "prettier": "2.8.8",
     "supertest": "3.4.2",
     "wait-on": "3.3.0"
   },
