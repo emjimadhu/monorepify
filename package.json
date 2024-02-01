@@ -35,14 +35,14 @@
     "utils:remove-node-modules": "rimraf node_modules apps/vue/node_modules apps/nest/node_modules libs/shared/node_modules"
   },
   "devDependencies": {
-    "@types/jest": "24.9.1",
+    "@types/jest": "29.5.12",
     "@types/node": "12.12.22",
     "@vue/cli-plugin-typescript": "4.5.4",
     "concurrently": "5.0.2",
-    "jest": "24.9.0",
+    "jest": "29.7.0",
     "lint-staged": "9.5.0",
     "rimraf": "3.0.0",
-    "ts-jest": "24.2.0",
+    "ts-jest": "29.1.2",
     "ts-node": "8.5.4",
     "tsconfig-paths": "3.9.0",
     "tslint": "5.20.1",
